@@ -39,7 +39,7 @@ Use **TI terminology**: course, learning path, Panorama, sublicense, C1/C2, etc.
 
 ## Instructions
 
-1. **Leverage create-prd.** Follow the process in `skills/product/execution/create-prd/SKILL.md`:
+1. **Leverage create-prd.** Follow the process in `skills/product/product-execution/create-prd/SKILL.md`:
    - **Ask before writing (mandatory).** Ask as many clarifying questions as possible (problem, target users, success metrics, scope, constraints, prior art). Do not write until you have enough input. See `standards/conventions.md` (Ask before deciding).
    - **Why now:** Explicitly ask: "Why now? (market shift, customer change, launch/renewal timing, repeated signal, competitive pressure)." If the answer is thin, prompt: "Any market trend, customer signal, or event that makes this urgent this quarter/year?"
    - **Competition:** For "Competition & How we Leap Frog," if the user has competitive intel (e.g. NotebookLM or files in `workspace/_references/competitive/`), ask them to paste a summary or give the file path so it can be included. See `workspace/_references/competitive-intel-README.md`.
@@ -84,5 +84,5 @@ Use **TI terminology**: course, learning path, Panorama, sublicense, C1/C2, etc.
 ## References
 
 - **Template:** `templates/product/[TEMPLATE] Product Brief .md`
-- **Process (create-prd):** `skills/product/execution/create-prd/SKILL.md`
+- **Process (create-prd):** `skills/product/product-execution/create-prd/SKILL.md`
 - **Conventions:** `standards/conventions.md`

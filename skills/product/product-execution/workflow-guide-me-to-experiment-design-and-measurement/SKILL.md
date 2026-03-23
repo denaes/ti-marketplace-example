@@ -24,7 +24,7 @@ Design experiments (A/B or other), define instrumentation and dashboard requirem
 ## Prerequisites
 
 - Input: hypothesis or feature to test; or raw experiment data/results
-- Skills: `skills/product/data-analytics/measure-experiment-design/SKILL.md`, `skills/product/data-analytics/measure-instrumentation-spec/SKILL.md`, `skills/product/data-analytics/measure-dashboard-requirements/SKILL.md`, `skills/product/data-analytics/measure-experiment-results/SKILL.md`, `skills/product/data-analytics/ab-test-analysis/SKILL.md`
+- Skills: `skills/product/product-data-analytics/measure-experiment-design/SKILL.md`, `skills/product/product-data-analytics/measure-instrumentation-spec/SKILL.md`, `skills/product/product-data-analytics/measure-dashboard-requirements/SKILL.md`, `skills/product/product-data-analytics/measure-experiment-results/SKILL.md`, `skills/product/product-data-analytics/ab-test-analysis/SKILL.md`
 
 ## Step 1: Clarify goal and inputs
 
@@ -57,4 +57,4 @@ Design experiments (A/B or other), define instrumentation and dashboard requirem
 ## References
 
 - Conventions: `standards/conventions.md`
-- Define hypothesis: `skills/product/discovery/define-hypothesis/SKILL.md`
+- Define hypothesis: `skills/product/product-discovery/define-hypothesis/SKILL.md`

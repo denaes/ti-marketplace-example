@@ -3,7 +3,7 @@
 When skills from multiple sources cover similar ground, they are kept as complementary
 alternatives. This document maps overlapping skills and explains which to prefer.
 
-**ti-skills** (`skills/ti-skills/`) are not duplicates of `product/execution/ti-write-prd` and related TI playbook skills: *ti-skills* encode **public marketing / platform positioning**; playbook TI skills encode **internal product and delivery workflows** (PRDs, briefs, codebase patterns). Use both when the task spans positioning and implementation.
+**Thought Industries positioning skills** (`skills/ti-clp-platform-overview/`, `skills/ti-external-audience-use-cases/`, … — seven folders under `skills/`, frontmatter `metadata.department: ti-skills`) are not duplicates of `skills/product/product-execution/ti-write-prd` and related TI playbook skills: the **ti-*** folders encode **public marketing / platform positioning**; playbook TI skills under **`product-execution`** encode **internal product and delivery workflows** (PRDs, briefs, templates). Use both when the task spans positioning and implementation.
 
 ## Code Review
 
@@ -56,12 +56,12 @@ full QA workflow.
 
 | Skill | Source | When to Use |
 |-------|--------|-------------|
-| `product/discovery/brainstorming` | superpowers | Idea -> design through Socratic dialogue (general) |
-| `product/discovery/brainstorm-ideas-existing` | playbook | Ideation for existing products |
-| `product/discovery/brainstorm-ideas-new` | playbook | Ideation for new products |
-| `product/discovery/brainstorm-experiments-existing` | playbook | Experiments for existing products |
-| `product/discovery/brainstorm-experiments-new` | playbook | Pretotypes for new products |
-| `product/execution/brainstorm-okrs` | playbook | Team-level OKR brainstorming |
+| `product/product-discovery/brainstorming` | superpowers | Idea -> design through Socratic dialogue (general) |
+| `product/product-discovery/brainstorm-ideas-existing` | playbook | Ideation for existing products |
+| `product/product-discovery/brainstorm-ideas-new` | playbook | Ideation for new products |
+| `product/product-discovery/brainstorm-experiments-existing` | playbook | Experiments for existing products |
+| `product/product-discovery/brainstorm-experiments-new` | playbook | Pretotypes for new products |
+| `product/product-execution/brainstorm-okrs` | playbook | Team-level OKR brainstorming |
 
 **Recommendation:** Use `brainstorming` (superpowers) for general idea -> design flow. Use the
 playbook variants for specific PM brainstorming contexts.
@@ -84,8 +84,8 @@ playbook variants for specific PM brainstorming contexts.
 | Skill | Source | When to Use |
 |-------|--------|-------------|
 | `engineering-management/retro` | gstack | Team-aware weekly retro with per-person breakdowns |
-| `product/execution/retro` | playbook | Sprint retrospective facilitation |
+| `product/product-execution/retro` | playbook | Sprint retrospective facilitation |
 | `project-management/sprint-retrospective` | Claude-Skills | General sprint retro framework |
 
 **Recommendation:** Use `engineering-management/retro` (gstack) for team retros with history.
-Use `product/execution/retro` (playbook) for sprint-focused retros.
+Use `product/product-execution/retro` (playbook) for sprint-focused retros.

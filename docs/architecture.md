@@ -2,96 +2,97 @@
 
 ## Overview
 
-Orbit is a unified AI skills library with **466 skills** across **15 departments**, consolidated
-from several upstream source repositories plus an in-repo **ti-skills** department (Thought
-Industries public positioning). Skills are organized by department under `skills/`.
+**This repository (`ti-marketplace-example`)** ships a **subset** of the Orbit skills library focused on **product** workflows and **Thought Industries** public-positioning skills.
 
-## Directory Layout
+As of the last `catalog/generate-catalog.py` run, the tree under `skills/` contains **178 skills** grouped into **8 catalog “departments”** (the first path segment under `skills/` — see `catalog/skills-by-department.md`):
+
+| Path root | Role |
+|-----------|------|
+| `skills/product/` | PM / strategy / discovery / execution skills in **`product-*` subfolders** (e.g. `product-execution/`, `product-discovery/`) |
+| `skills/ti-*/` | Seven TI positioning skills (one folder per skill name under `skills/`) |
+
+Upstream **full Orbit** bundles 400+ skills across many departments (engineering, operations, compliance, …). Those paths appear in `docs/skill-mapping.md` as **historical source → destination** mapping; they are **not** all present in this checkout.
+
+## Directory Layout (this repo)
 
 ```
 ti-marketplace-example/
 ├── .claude-plugin/          Claude Code plugin manifest + marketplace
 ├── .cursor-plugin/          Cursor plugin manifest
 ├── .codex/                  Codex install instructions
-├── .opencode/               OpenCode plugin (JS) + install instructions
-├── gemini-extension.json    Gemini CLI extension manifest
-├── GEMINI.md                Gemini context file (@imports bootstrap skill)
-├── hooks/                   Session lifecycle hooks (bootstrap injection)
-├── skills/                  All skills, organized by department
-│   └── ti-skills/           Thought Industries platform & use cases (see README.md)
-├── agents/                  Agent definitions (code reviewer, security, QA, etc.)
-├── memory/                  PARA-based memory system skill
-├── standards/               Best practices (communication, docs, git, quality, security)
-├── templates/               GitHub Actions workflows, data templates
-├── catalog/                 Auto-generated skill indexes
-├── scripts/                 Utility scripts
-└── docs/                    Documentation
+├── .opencode/               OpenCode install notes
+├── gemini-extension.json    Gemini CLI extension manifest (if present)
+├── GEMINI.md                Gemini context (if present)
+├── hooks/                   Session lifecycle hooks (bootstrap injection when configured)
+├── skills/
+│   ├── product/             Product department
+│   │   ├── product-discovery/
+│   │   ├── product-execution/
+│   │   ├── product-strategy/
+│   │   ├── product-market-research/
+│   │   ├── product-marketing-growth/
+│   │   ├── product-go-to-market/
+│   │   ├── product-leadership/
+│   │   ├── product-data-analytics/
+│   │   ├── product-toolkit/
+│   │   ├── product-references/
+│   │   ├── product-scripts/
+│   │   └── …                Other product-* subdomains + top-level product skills
+│   ├── ti-clp-platform-overview/
+│   ├── ti-external-audience-use-cases/
+│   ├── ti-learning-experience-authoring/
+│   ├── ti-content-distribution-personalization/
+│   ├── ti-training-monetization-ecommerce/
+│   ├── ti-learning-data-analytics-roi/
+│   └── ti-integrate-extend-headless/
+├── catalog/                 Auto-generated indexes (regenerate after skill moves)
+├── scripts/                 validate-skills, normalize-frontmatter, fix-references
+├── standards/               Conventions (if present)
+├── templates/               Templates (if present)
+└── docs/                    This documentation
 ```
+
+**Path convention:** Product subdomains use a **`product-` prefix** inside `skills/product/` (e.g. `skills/product/product-execution/create-prd/`).
+
+**TI skills:** Each lives at **`skills/<skill-folder>/`** (flat under `skills/`, not under `skills/ti-skills/`). Frontmatter typically sets `metadata.department: ti-skills` and `metadata.source: thought-industries-website`. The catalog’s “department” column for these rows is the **folder name** (`ti-clp-platform-overview`, …) because the generator keys off the filesystem path.
 
 ## Platform Support
 
-Orbit uses the same multi-platform distribution model as superpowers:
+Orbit-style plugins use the same multi-platform idea as superpowers:
 
 ### Claude Code
 - Plugin manifest: `.claude-plugin/plugin.json`
 - Marketplace: `.claude-plugin/marketplace.json`
-- Session hook: `hooks/hooks.json` -> `hooks/session-start` (injects bootstrap)
-- Skills accessed via Claude Code's native `Skill` tool
+- Session hook: `hooks/hooks.json` → `hooks/session-start` (when bootstrap skill path exists)
 
 ### Cursor
 - Plugin manifest: `.cursor-plugin/plugin.json`
-- Session hook: `hooks/hooks-cursor.json` -> `hooks/session-start`
-- Skills accessed via Cursor's skill panel or Skill tool
+- Session hook: `hooks/hooks-cursor.json` → `hooks/session-start`
 
 ### Gemini CLI
 - Extension manifest: `gemini-extension.json`
-- Context: `GEMINI.md` @imports the bootstrap skill and tool mapping
-- Skills accessed via `activate_skill` tool
-- No subagent support (falls back to single-session execution)
+- Skills via `activate_skill` (when configured)
 
-### Codex
-- Install: clone + symlink skills/ to `~/.agents/skills/orbit`
-- Tool mapping in `skills/_bootstrap/using-orbit/references/codex-tools.md`
+### Codex / OpenCode
+- See `.codex/INSTALL.md` and `.opencode/INSTALL.md`
 
-### OpenCode
-- Plugin: `.opencode/plugins/orbit.js` (ESM module)
-- Auto-registers skills via config hook, injects bootstrap via system prompt transform
+## Bootstrap flow (when bootstrap skill exists)
 
-## Bootstrap Flow
+Full Orbit installs often inject `skills/_bootstrap/using-orbit/SKILL.md` at session start. **This marketplace repo may omit `_bootstrap/`**; agents should use `catalog/skills-by-department.md` and path conventions above to find skills.
 
 ```
-Session Start
-  |
-  v
-hooks/session-start (bash)
-  |
-  ├── Reads skills/_bootstrap/using-orbit/SKILL.md
-  ├── JSON-escapes content
-  ├── Detects platform (Cursor vs Claude Code vs other)
-  └── Outputs JSON with bootstrap as additional_context
-        |
-        v
-Agent receives using-orbit skill content
-  |
-  ├── Learns department structure
-  ├── Learns skill invocation rules (1% rule)
-  └── Knows how to find skills via Skill tool
+Session Start (optional)
+  → hooks/session-start
+  → inject bootstrap / rules
+  → agent resolves skills via tool or path index
 ```
 
-## Skill Format
+## Skill format
 
-Every skill follows this structure:
+Every skill is a folder containing **`SKILL.md`** (YAML frontmatter + body). Optional: `references/`, `scripts/`, `assets/`, `templates/`.
 
-```
-skill-name/
-├── SKILL.md              # Required: YAML frontmatter + markdown body
-├── references/           # Optional: knowledge bases, frameworks
-├── scripts/              # Optional: Python CLI tools (stdlib only)
-├── assets/               # Optional: templates, sample data
-└── templates/            # Optional: output templates
-```
+YAML frontmatter (must pass `scripts/validate-skills.py --quick`):
 
-YAML frontmatter (must pass `scripts/validate-skills.py`):
 ```yaml
 ---
 name: skill-name
@@ -99,46 +100,37 @@ description: >
   Use when [trigger conditions]. [What it does].
 metadata:
   type: skill
-  department: engineering
-  source: superpowers
+  department: product
+  source: ti-rd-playbook
   version: "1.0"
 ---
 ```
 
 - **`metadata.type`:** `skill`, `workflow`, `command`, or `agent`
-- **`metadata.department`:** one of the allowed values (including `ti-skills`); see `scripts/validate-skills.py` (`VALID_DEPARTMENTS`)
-- **`metadata.source`:** provenance string (e.g. `ti-rd-playbook`, `thought-industries-website`)
-
-## Memory System
-
-The memory system (in `memory/SKILL.md`) provides persistent knowledge storage:
-
-1. **Knowledge Graph** -- PARA method (Projects/Areas/Resources/Archives) at `~/.orbit/life/`
-2. **Daily Notes** -- Raw timeline at `~/.orbit/memory/YYYY-MM-DD.md`
-3. **Tacit Knowledge** -- User patterns at `~/.orbit/MEMORY.md`
-4. **Session Tracking** -- Active sessions at `~/.orbit/sessions/`
-5. **Per-Project State** -- Project data at `~/.orbit/projects/{repo}/`
+- **`metadata.department`:** must be one of `VALID_DEPARTMENTS` in `scripts/validate-skills.py` (includes `ti-skills` for Thought Industries positioning skills)
+- **`metadata.source`:** provenance (e.g. `thought-industries-website`, `ti-rd-playbook`)
 
 ## Catalog
 
-The catalog is auto-generated by `catalog/generate-catalog.py`:
+Generated by:
 
-- `skills-index.yaml` -- Machine-readable index (all skills)
-- `skills-by-department.md` -- Human-readable organized by department
-- `skills-by-type.md` -- Organized by type (`skill`, `workflow`, `command`, `agent`)
+```bash
+python3 catalog/generate-catalog.py
+```
 
-Run `python3 catalog/generate-catalog.py` to regenerate after adding skills.
+Outputs:
 
-## Sources
+- `catalog/skills-index.yaml` — machine-readable index
+- `catalog/skills-by-department.md` — by path root / product subdomain
+- `catalog/skills-by-type.md` — by `metadata.type`
 
-| Source | Skills | Focus |
-|--------|--------|-------|
-| superpowers | 14 | Plugin structure, TDD, debugging, collaboration |
-| Claude-Skills | 204 | Breadth across 13 domains, Python automation |
-| gstack | 13 | Role-based personas, memory, headless browser |
-| paperclip | 10 | PARA memory, agent orchestration |
-| ti-rd-playbook | ~147 | PM depth (119), tech lead (17), engineering (11) |
-| ceos | 18 | EOS business framework |
-| thought-industries-website | 7 | TI Customer Learning & Intelligence Platform positioning (`skills/ti-skills/`) |
+**After moving or renaming skill folders, always regenerate the catalog** so docs consumers and CI stay aligned.
 
-Counts are approximate for merged sources; run `python3 catalog/generate-catalog.py` and open `catalog/skills-by-department.md` for current totals.
+## Sources (TI marketplace slice)
+
+| Source | In this repo | Focus |
+|--------|----------------|-------|
+| ti-rd-playbook (via product skills) | Product skills under `skills/product/` | PRDs, discovery, strategy, GTM, analytics, commands |
+| thought-industries-website | 7 skills under `skills/ti-*/` | TI Customer Learning & Intelligence Platform positioning |
+
+For **full Orbit** source mix (superpowers, Claude-Skills, gstack, ceos, …), see the tables in `docs/skill-mapping.md` and upstream Orbit documentation.

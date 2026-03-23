@@ -28,7 +28,7 @@ Orchestrate a discovery cycle from raw interviews or research to a structured pr
 
 1. **Confirm with the user:** What do they have? (raw notes, already summarized interviews, competitor links, none yet)
 2. **Goal:** Problem statement only, or full opportunity tree + hypothesis? Which segment or persona?
-3. If they have nothing yet, use **discover-interview-prep** (`skills/product/discovery/discovery-interview-prep/SKILL.md`) to build an interview plan and script; then they can run interviews and return with notes.
+3. If they have nothing yet, use **discover-interview-prep** (`skills/product/product-discovery/discovery-interview-prep/SKILL.md`) to build an interview plan and script; then they can run interviews and return with notes.
 
 ## Step 2: Synthesize research (if interviews/notes exist)
 
@@ -38,7 +38,7 @@ Orchestrate a discovery cycle from raw interviews or research to a structured pr
 
 ## Step 3: Define problem and opportunity
 
-1. **Problem statement** — Use **define-problem-statement** (`skills/product/execution/define-problem-statement/SKILL.md`) to produce a clear, stakeholder-ready problem statement.
+1. **Problem statement** — Use **define-problem-statement** (`skills/product/product-execution/define-problem-statement/SKILL.md`) to produce a clear, stakeholder-ready problem statement.
 2. **Opportunity tree** — Use **define-opportunity-tree** to map opportunities from the problem and synthesis.
 3. **Hypothesis** — Use **define-hypothesis** to turn the chosen opportunity into a testable if/then hypothesis (for experiments or PRD).
 
@@ -50,5 +50,5 @@ Orchestrate a discovery cycle from raw interviews or research to a structured pr
 ## References
 
 - Conventions: `standards/conventions.md`
-- Discovery process (full cycle): `skills/product/discovery/discovery-process/SKILL.md`
-- Write PRD: `skills/product/execution/workflow-write-prd/SKILL.md`
+- Discovery process (full cycle): `skills/product/product-discovery/discovery-process/SKILL.md`
+- Write PRD: `skills/product/product-execution/workflow-write-prd/SKILL.md`

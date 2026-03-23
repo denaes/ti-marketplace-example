@@ -2,8 +2,8 @@
 
 ## Adding a New Skill
 
-1. **Choose the right department** -- see the department table in `skills/_bootstrap/using-orbit/SKILL.md` (includes **`ti-skills`** for Thought Industries platform positioning; see `skills/ti-skills/README.md`).
-2. **Create the skill directory** -- `skills/<department>/<skill-name>/` (or `skills/<department>/<subdomain>/<skill-name>/` where subdomains exist, e.g. `product/discovery/`).
+1. **Choose the right department** -- use `catalog/skills-by-department.md` and `scripts/validate-skills.py` (`VALID_DEPARTMENTS`). In this repo, product work lives under **`skills/product/<product-*-subdomain>/<skill-name>/`**. Thought Industries **positioning** skills use **`metadata.department: ti-skills`** and typically live at **`skills/ti-<skill-name>/`** (one folder per skill under `skills/`, not under `ti-skills/`).
+2. **Create the skill directory** -- `skills/product/product-execution/my-skill/` or `skills/ti-my-positioning-skill/` (follow existing naming patterns).
 3. **Write SKILL.md** with proper frontmatter (must match `scripts/validate-skills.py`):
 
 ```yaml

@@ -24,20 +24,20 @@ Produce a TI-aligned PRD or Product Brief from a problem statement, outline, or 
 - Input: problem statement, brief, or outline (paste, file path, or conversation)
 - TI Product Brief template: `templates/product/[TEMPLATE] Product Brief .md`
 - PRD template: `templates/product/Product Brief [TEMPLATE].md`
-- Skills: `skills/product/execution/ti-write-prd/SKILL.md`, `skills/product/execution/create-prd/SKILL.md`, `skills/product/execution/deliver-prd/SKILL.md`, `skills/product/execution/prd-development/SKILL.md`, `skills/product/execution/ti-prd-okrs/SKILL.md` (optional)
+- Skills: `skills/product/product-execution/ti-write-prd/SKILL.md`, `skills/product/product-execution/create-prd/SKILL.md`, `skills/product/product-execution/deliver-prd/SKILL.md`, `skills/product/product-execution/prd-development/SKILL.md`, `skills/product/product-execution/ti-prd-okrs/SKILL.md` (optional)
 
 ## Step 1: Clarify scope and format
 
 1. **Confirm with the user:** Product Brief vs PRD (Brief is the full template; PRD can be shorter). What product/feature name and phase (Alpha/Beta/GA)?
-2. **Optional — OKRs:** Ask whether to **generate OKRs as part of the brief**. If yes, OKRs will be produced during the same generation pass and written as `06-okrs.md` in the project prd folder (see product-brief-multi-file rule). Uses `skills/product/execution/ti-prd-okrs/SKILL.md`.
+2. **Optional — OKRs:** Ask whether to **generate OKRs as part of the brief**. If yes, OKRs will be produced during the same generation pass and written as `06-okrs.md` in the project prd folder (see product-brief-multi-file rule). Uses `skills/product/product-execution/ti-prd-okrs/SKILL.md`.
 3. **Gather:** Any existing bullets, requirements, or links the user has. If scope is vague, ask what is in/out of scope per `standards/conventions.md`.
 4. **If the brief will include Staged Features & ACs:** Set the expectation that the user will be asked for scenario details (happy path, errors, branching) so acceptance criteria are testable.
 
 ## Step 2: Read reference materials
 
 1. **TI Product Brief template** — `templates/product/[TEMPLATE] Product Brief .md` (sections, required fields)
-2. **ti-write-prd skill** — `skills/product/execution/ti-write-prd/SKILL.md` (TI alignment, codebase references)
-3. **create-prd / deliver-prd** — `skills/product/execution/create-prd/SKILL.md`, `skills/product/execution/deliver-prd/SKILL.md` (structure, quality bar)
+2. **ti-write-prd skill** — `skills/product/product-execution/ti-write-prd/SKILL.md` (TI alignment, codebase references)
+3. **create-prd / deliver-prd** — `skills/product/product-execution/create-prd/SKILL.md`, `skills/product/product-execution/deliver-prd/SKILL.md` (structure, quality bar)
 
 ## Step 3: Draft the document
 
@@ -50,11 +50,11 @@ Produce a TI-aligned PRD or Product Brief from a problem statement, outline, or 
 
 ## Step 4: Polish and place output
 
-1. Optionally run **grammar-check** (`skills/product/toolkit/grammar-check/SKILL.md`) on the draft.
+1. Optionally run **grammar-check** (`skills/product/product-toolkit/grammar-check/SKILL.md`) on the draft.
 2. Write the output to file(s). If generating multi-file: `workspace/projects/<slug>/prd/` with `00-index.md`, section files, and — if OKRs were opted in — `06-okrs.md`. If single-file: `workspace/_inbox/` or project folder; name e.g. `YYYY-MM-DD_<feature>-product-brief.md`.
 3. Tell the user they can run **write-prd-assessment** next (or that the brief is already in `workspace/projects/<slug>/prd/` for the full pipeline).
 
 ## References
 
 - Conventions: `standards/conventions.md`
-- Assess PRD: `skills/product/execution/workflow-write-prd-assessment/SKILL.md` (next step after writing)
+- Assess PRD: `skills/product/product-execution/workflow-write-prd-assessment/SKILL.md` (next step after writing)

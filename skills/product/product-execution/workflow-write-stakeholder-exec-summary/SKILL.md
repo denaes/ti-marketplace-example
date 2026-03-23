@@ -22,7 +22,7 @@ Produce a one-pager or short narrative for product or leadership: status, scope,
 ## Prerequisites
 
 - Input: context (project name, scope, current state, open questions, or link to PRD/epic)
-- Skills: `skills/product/execution/discover-stakeholder-summary/SKILL.md`; optionally `skills/product/leadership/vp-cpo-readiness-advisor/SKILL.md`, `skills/product/leadership/director-readiness-advisor/SKILL.md`
+- Skills: `skills/product/product-execution/discover-stakeholder-summary/SKILL.md`; optionally `skills/product/product-leadership/vp-cpo-readiness-advisor/SKILL.md`, `skills/product/product-leadership/director-readiness-advisor/SKILL.md`
 
 ## Step 1: Clarify audience and purpose
 
@@ -32,7 +32,7 @@ Produce a one-pager or short narrative for product or leadership: status, scope,
 
 ## Step 2: Read reference materials
 
-1. **discover-stakeholder-summary** — `skills/product/execution/discover-stakeholder-summary/SKILL.md` and its EXAMPLE/TEMPLATE.
+1. **discover-stakeholder-summary** — `skills/product/product-execution/discover-stakeholder-summary/SKILL.md` and its EXAMPLE/TEMPLATE.
 2. Use the template structure: objective, scope, status, risks/blockers, next steps, ask.
 
 ## Step 3: Draft the summary

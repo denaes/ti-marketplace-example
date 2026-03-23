@@ -1,12 +1,14 @@
 # Orbit Skill Mapping -- Source to Destination
 
-466 skills across **15 departments**. Most entries below map from **6 upstream** source repositories; **`ti-skills`** (7 skills) is maintained in this repo and is documented at the end.
+This document records how skills from **upstream Orbit source repositories** map into the **full** Orbit tree (engineering, product subdomains, operations, …). **This checkout (`ti-marketplace-example`)** only includes a **subset** — mainly **`skills/product/...`** and seven **`skills/ti-*/`** positioning skills. Regenerate and open **`catalog/skills-by-department.md`** for the **current** skill count and paths in your workspace (e.g. **178 skills / 8 path roots** when only product + TI skills are present).
+
+Product destinations in the tables below use the **`product-*` subdomain** layout (e.g. `skills/product/product-discovery/...`, `skills/product/product-execution/...`).
 
 ## Superpowers (14 skills)
 
 | Original Location | Orbit Location |
 |---|---|
-| `superpowers/skills/brainstorming/` | `skills/product/discovery/brainstorming/` |
+| `superpowers/skills/brainstorming/` | `skills/product/product-discovery/brainstorming/` |
 | `superpowers/skills/dispatching-parallel-agents/` | `skills/engineering-management/dispatching-parallel-agents/` |
 | `superpowers/skills/executing-plans/` | `skills/engineering-management/executing-plans/` |
 | `superpowers/skills/finishing-a-development-branch/` | `skills/engineering-management/finishing-a-development-branch/` |
@@ -41,174 +43,174 @@
 
 | Original Location | Orbit Location |
 |---|---|
-| `ti-rd-playbook/ti-pm/skills/ab-test-analysis/` | `skills/product/data-analytics/ab-test-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/acquisition-channel-advisor/` | `skills/product/go-to-market/acquisition-channel-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/ai-shaped-readiness-advisor/` | `skills/product/discovery/ai-shaped-readiness-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/altitude-horizon-framework/` | `skills/product/leadership/altitude-horizon-framework/` |
-| `ti-rd-playbook/ti-pm/skills/analyze-feature-requests/` | `skills/product/discovery/analyze-feature-requests/` |
-| `ti-rd-playbook/ti-pm/skills/ansoff-matrix/` | `skills/product/strategy/ansoff-matrix/` |
-| `ti-rd-playbook/ti-pm/skills/beachhead-segment/` | `skills/product/go-to-market/beachhead-segment/` |
-| `ti-rd-playbook/ti-pm/skills/brainstorm-experiments-existing/` | `skills/product/discovery/brainstorm-experiments-existing/` |
-| `ti-rd-playbook/ti-pm/skills/brainstorm-experiments-new/` | `skills/product/discovery/brainstorm-experiments-new/` |
-| `ti-rd-playbook/ti-pm/skills/brainstorm-ideas-existing/` | `skills/product/discovery/brainstorm-ideas-existing/` |
-| `ti-rd-playbook/ti-pm/skills/brainstorm-ideas-new/` | `skills/product/discovery/brainstorm-ideas-new/` |
-| `ti-rd-playbook/ti-pm/skills/brainstorm-okrs/` | `skills/product/execution/brainstorm-okrs/` |
-| `ti-rd-playbook/ti-pm/skills/business-health-diagnostic/` | `skills/product/strategy/business-health-diagnostic/` |
-| `ti-rd-playbook/ti-pm/skills/business-model/` | `skills/product/strategy/business-model/` |
-| `ti-rd-playbook/ti-pm/skills/cohort-analysis/` | `skills/product/data-analytics/cohort-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/company-research/` | `skills/product/strategy/company-research/` |
-| `ti-rd-playbook/ti-pm/skills/competitive-battlecard/` | `skills/product/go-to-market/competitive-battlecard/` |
-| `ti-rd-playbook/ti-pm/skills/competitor-analysis/` | `skills/product/market-research/competitor-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/context-engineering-advisor/` | `skills/product/discovery/context-engineering-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/create-prd/` | `skills/product/execution/create-prd/` |
-| `ti-rd-playbook/ti-pm/skills/customer-journey-map/` | `skills/product/market-research/customer-journey-map/` |
-| `ti-rd-playbook/ti-pm/skills/customer-journey-map-phuryn/` | `skills/product/market-research/customer-journey-map-phuryn/` |
-| `ti-rd-playbook/ti-pm/skills/customer-journey-mapping-workshop/` | `skills/product/market-research/customer-journey-mapping-workshop/` |
-| `ti-rd-playbook/ti-pm/skills/define-hypothesis/` | `skills/product/discovery/define-hypothesis/` |
-| `ti-rd-playbook/ti-pm/skills/define-jtbd-canvas/` | `skills/product/execution/define-jtbd-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/define-opportunity-tree/` | `skills/product/discovery/define-opportunity-tree/` |
-| `ti-rd-playbook/ti-pm/skills/define-problem-statement/` | `skills/product/execution/define-problem-statement/` |
-| `ti-rd-playbook/ti-pm/skills/deliver-edge-cases/` | `skills/product/execution/deliver-edge-cases/` |
-| `ti-rd-playbook/ti-pm/skills/deliver-launch-checklist/` | `skills/product/execution/deliver-launch-checklist/` |
-| `ti-rd-playbook/ti-pm/skills/deliver-prd/` | `skills/product/execution/deliver-prd/` |
-| `ti-rd-playbook/ti-pm/skills/deliver-release-notes/` | `skills/product/execution/deliver-release-notes/` |
-| `ti-rd-playbook/ti-pm/skills/deliver-user-stories/` | `skills/product/execution/deliver-user-stories/` |
-| `ti-rd-playbook/ti-pm/skills/develop-adr/` | `skills/product/execution/develop-adr/` |
-| `ti-rd-playbook/ti-pm/skills/develop-design-rationale/` | `skills/product/execution/develop-design-rationale/` |
-| `ti-rd-playbook/ti-pm/skills/develop-solution-brief/` | `skills/product/execution/develop-solution-brief/` |
-| `ti-rd-playbook/ti-pm/skills/develop-spike-summary/` | `skills/product/execution/develop-spike-summary/` |
-| `ti-rd-playbook/ti-pm/skills/director-readiness-advisor/` | `skills/product/leadership/director-readiness-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/discover-competitive-analysis/` | `skills/product/market-research/discover-competitive-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/discover-interview-synthesis/` | `skills/product/execution/discover-interview-synthesis/` |
-| `ti-rd-playbook/ti-pm/skills/discover-stakeholder-summary/` | `skills/product/execution/discover-stakeholder-summary/` |
-| `ti-rd-playbook/ti-pm/skills/discovery-interview-prep/` | `skills/product/discovery/discovery-interview-prep/` |
-| `ti-rd-playbook/ti-pm/skills/discovery-process/` | `skills/product/discovery/discovery-process/` |
-| `ti-rd-playbook/ti-pm/skills/draft-nda/` | `skills/product/toolkit/draft-nda/` |
-| `ti-rd-playbook/ti-pm/skills/dummy-dataset/` | `skills/product/execution/dummy-dataset/` |
-| `ti-rd-playbook/ti-pm/skills/eol-message/` | `skills/product/execution/eol-message/` |
-| `ti-rd-playbook/ti-pm/skills/epic-breakdown-advisor/` | `skills/product/execution/epic-breakdown-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/epic-hypothesis/` | `skills/product/execution/epic-hypothesis/` |
-| `ti-rd-playbook/ti-pm/skills/executive-onboarding-playbook/` | `skills/product/leadership/executive-onboarding-playbook/` |
-| `ti-rd-playbook/ti-pm/skills/feature-investment-advisor/` | `skills/product/discovery/feature-investment-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/finance-based-pricing-advisor/` | `skills/product/strategy/finance-based-pricing-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/finance-metrics-quickref/` | `skills/product/strategy/finance-metrics-quickref/` |
-| `ti-rd-playbook/ti-pm/skills/foundation-persona/` | `skills/product/execution/foundation-persona/` |
-| `ti-rd-playbook/ti-pm/skills/grammar-check/` | `skills/product/toolkit/grammar-check/` |
-| `ti-rd-playbook/ti-pm/skills/growth-loops/` | `skills/product/go-to-market/growth-loops/` |
-| `ti-rd-playbook/ti-pm/skills/gtm-motions/` | `skills/product/go-to-market/gtm-motions/` |
-| `ti-rd-playbook/ti-pm/skills/gtm-strategy/` | `skills/product/go-to-market/gtm-strategy/` |
-| `ti-rd-playbook/ti-pm/skills/ideal-customer-profile/` | `skills/product/go-to-market/ideal-customer-profile/` |
-| `ti-rd-playbook/ti-pm/skills/identify-assumptions-existing/` | `skills/product/discovery/identify-assumptions-existing/` |
-| `ti-rd-playbook/ti-pm/skills/identify-assumptions-new/` | `skills/product/discovery/identify-assumptions-new/` |
-| `ti-rd-playbook/ti-pm/skills/init-project/` | `skills/product/execution/init-project/` |
-| `ti-rd-playbook/ti-pm/skills/init-project-jpkb/` | `skills/product/execution/init-project-jpkb/` |
-| `ti-rd-playbook/ti-pm/skills/interview-script/` | `skills/product/discovery/interview-script/` |
-| `ti-rd-playbook/ti-pm/skills/iterate-lessons-log/` | `skills/product/execution/iterate-lessons-log/` |
-| `ti-rd-playbook/ti-pm/skills/iterate-pivot-decision/` | `skills/product/execution/iterate-pivot-decision/` |
-| `ti-rd-playbook/ti-pm/skills/iterate-refinement-notes/` | `skills/product/execution/iterate-refinement-notes/` |
-| `ti-rd-playbook/ti-pm/skills/iterate-retrospective/` | `skills/product/execution/iterate-retrospective/` |
-| `ti-rd-playbook/ti-pm/skills/job-stories/` | `skills/product/execution/job-stories/` |
-| `ti-rd-playbook/ti-pm/skills/jobs-to-be-done/` | `skills/product/discovery/jobs-to-be-done/` |
-| `ti-rd-playbook/ti-pm/skills/lean-canvas/` | `skills/product/strategy/lean-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/lean-ux-canvas/` | `skills/product/discovery/lean-ux-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/market-segments/` | `skills/product/market-research/market-segments/` |
-| `ti-rd-playbook/ti-pm/skills/market-sizing/` | `skills/product/market-research/market-sizing/` |
-| `ti-rd-playbook/ti-pm/skills/marketing-ideas/` | `skills/product/marketing-growth/marketing-ideas/` |
-| `ti-rd-playbook/ti-pm/skills/measure-dashboard-requirements/` | `skills/product/data-analytics/measure-dashboard-requirements/` |
-| `ti-rd-playbook/ti-pm/skills/measure-experiment-design/` | `skills/product/data-analytics/measure-experiment-design/` |
-| `ti-rd-playbook/ti-pm/skills/measure-experiment-results/` | `skills/product/data-analytics/measure-experiment-results/` |
-| `ti-rd-playbook/ti-pm/skills/measure-instrumentation-spec/` | `skills/product/data-analytics/measure-instrumentation-spec/` |
-| `ti-rd-playbook/ti-pm/skills/metrics-dashboard/` | `skills/product/discovery/metrics-dashboard/` |
-| `ti-rd-playbook/ti-pm/skills/monetization-strategy/` | `skills/product/strategy/monetization-strategy/` |
-| `ti-rd-playbook/ti-pm/skills/north-star-metric/` | `skills/product/marketing-growth/north-star-metric/` |
-| `ti-rd-playbook/ti-pm/skills/opportunity-solution-tree/` | `skills/product/discovery/opportunity-solution-tree/` |
-| `ti-rd-playbook/ti-pm/skills/opportunity-solution-tree-phuryn/` | `skills/product/discovery/opportunity-solution-tree-phuryn/` |
-| `ti-rd-playbook/ti-pm/skills/outcome-roadmap/` | `skills/product/execution/outcome-roadmap/` |
-| `ti-rd-playbook/ti-pm/skills/pestel-analysis/` | `skills/product/strategy/pestel-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/pestle-analysis/` | `skills/product/strategy/pestle-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/pol-probe/` | `skills/product/discovery/pol-probe/` |
-| `ti-rd-playbook/ti-pm/skills/pol-probe-advisor/` | `skills/product/discovery/pol-probe-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/porters-five-forces/` | `skills/product/strategy/porters-five-forces/` |
-| `ti-rd-playbook/ti-pm/skills/positioning-ideas/` | `skills/product/marketing-growth/positioning-ideas/` |
-| `ti-rd-playbook/ti-pm/skills/positioning-statement/` | `skills/product/marketing-growth/positioning-statement/` |
-| `ti-rd-playbook/ti-pm/skills/positioning-workshop/` | `skills/product/marketing-growth/positioning-workshop/` |
-| `ti-rd-playbook/ti-pm/skills/prd-development/` | `skills/product/execution/prd-development/` |
-| `ti-rd-playbook/ti-pm/skills/pre-mortem/` | `skills/product/execution/pre-mortem/` |
-| `ti-rd-playbook/ti-pm/skills/press-release/` | `skills/product/execution/press-release/` |
-| `ti-rd-playbook/ti-pm/skills/pricing-strategy/` | `skills/product/strategy/pricing-strategy/` |
-| `ti-rd-playbook/ti-pm/skills/prioritization-advisor/` | `skills/product/discovery/prioritization-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/prioritization-frameworks/` | `skills/product/execution/prioritization-frameworks/` |
-| `ti-rd-playbook/ti-pm/skills/prioritize-assumptions/` | `skills/product/discovery/prioritize-assumptions/` |
-| `ti-rd-playbook/ti-pm/skills/prioritize-features/` | `skills/product/discovery/prioritize-features/` |
-| `ti-rd-playbook/ti-pm/skills/privacy-policy/` | `skills/product/toolkit/privacy-policy/` |
-| `ti-rd-playbook/ti-pm/skills/problem-framing-canvas/` | `skills/product/strategy/problem-framing-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/problem-statement/` | `skills/product/strategy/problem-statement/` |
-| `ti-rd-playbook/ti-pm/skills/product-name/` | `skills/product/marketing-growth/product-name/` |
-| `ti-rd-playbook/ti-pm/skills/product-strategy/` | `skills/product/strategy/product-strategy/` |
-| `ti-rd-playbook/ti-pm/skills/product-strategy-session/` | `skills/product/strategy/product-strategy-session/` |
-| `ti-rd-playbook/ti-pm/skills/product-vision/` | `skills/product/strategy/product-vision/` |
-| `ti-rd-playbook/ti-pm/skills/proto-persona/` | `skills/product/market-research/proto-persona/` |
-| `ti-rd-playbook/ti-pm/skills/recommendation-canvas/` | `skills/product/strategy/recommendation-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/release-notes/` | `skills/product/execution/release-notes/` |
-| `ti-rd-playbook/ti-pm/skills/repo-self-update/` | `skills/product/execution/repo-self-update/` |
-| `ti-rd-playbook/ti-pm/skills/review-resume/` | `skills/product/toolkit/review-resume/` |
-| `ti-rd-playbook/ti-pm/skills/roadmap-planning/` | `skills/product/strategy/roadmap-planning/` |
-| `ti-rd-playbook/ti-pm/skills/saas-economics-efficiency-metrics/` | `skills/product/strategy/saas-economics-efficiency-metrics/` |
-| `ti-rd-playbook/ti-pm/skills/saas-revenue-growth-metrics/` | `skills/product/strategy/saas-revenue-growth-metrics/` |
-| `ti-rd-playbook/ti-pm/skills/sentiment-analysis/` | `skills/product/market-research/sentiment-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/skill-authoring-workflow/` | `skills/product/execution/skill-authoring-workflow/` |
-| `ti-rd-playbook/ti-pm/skills/sprint-plan/` | `skills/product/execution/sprint-plan/` |
-| `ti-rd-playbook/ti-pm/skills/sql-queries/` | `skills/product/data-analytics/sql-queries/` |
-| `ti-rd-playbook/ti-pm/skills/stakeholder-map/` | `skills/product/execution/stakeholder-map/` |
-| `ti-rd-playbook/ti-pm/skills/startup-canvas/` | `skills/product/strategy/startup-canvas/` |
-| `ti-rd-playbook/ti-pm/skills/storyboard/` | `skills/product/discovery/storyboard/` |
-| `ti-rd-playbook/ti-pm/skills/summarize-interview/` | `skills/product/discovery/summarize-interview/` |
-| `ti-rd-playbook/ti-pm/skills/summarize-meeting/` | `skills/product/execution/summarize-meeting/` |
-| `ti-rd-playbook/ti-pm/skills/swot-analysis/` | `skills/product/strategy/swot-analysis/` |
-| `ti-rd-playbook/ti-pm/skills/tam-sam-som-calculator/` | `skills/product/market-research/tam-sam-som-calculator/` |
-| `ti-rd-playbook/ti-pm/skills/test-scenarios/` | `skills/product/execution/test-scenarios/` |
-| `ti-rd-playbook/ti-pm/skills/ti-prd-okrs/` | `skills/product/execution/ti-prd-okrs/` |
-| `ti-rd-playbook/ti-pm/skills/ti-strategy-from-playground/` | `skills/product/strategy/ti-strategy-from-playground/` |
-| `ti-rd-playbook/ti-pm/skills/ti-write-pob/` | `skills/product/execution/ti-write-pob/` |
-| `ti-rd-playbook/ti-pm/skills/ti-write-prd/` | `skills/product/execution/ti-write-prd/` |
-| `ti-rd-playbook/ti-pm/skills/user-personas/` | `skills/product/market-research/user-personas/` |
-| `ti-rd-playbook/ti-pm/skills/user-segmentation/` | `skills/product/market-research/user-segmentation/` |
-| `ti-rd-playbook/ti-pm/skills/user-stories/` | `skills/product/execution/user-stories/` |
-| `ti-rd-playbook/ti-pm/skills/user-story/` | `skills/product/execution/user-story/` |
-| `ti-rd-playbook/ti-pm/skills/user-story-mapping/` | `skills/product/execution/user-story-mapping/` |
-| `ti-rd-playbook/ti-pm/skills/user-story-mapping-workshop/` | `skills/product/discovery/user-story-mapping-workshop/` |
-| `ti-rd-playbook/ti-pm/skills/user-story-splitting/` | `skills/product/execution/user-story-splitting/` |
-| `ti-rd-playbook/ti-pm/skills/value-prop-statements/` | `skills/product/marketing-growth/value-prop-statements/` |
-| `ti-rd-playbook/ti-pm/skills/value-proposition/` | `skills/product/strategy/value-proposition/` |
-| `ti-rd-playbook/ti-pm/skills/vp-cpo-readiness-advisor/` | `skills/product/leadership/vp-cpo-readiness-advisor/` |
-| `ti-rd-playbook/ti-pm/skills/workshop-facilitation/` | `skills/product/discovery/workshop-facilitation/` |
-| `ti-rd-playbook/ti-pm/skills/wrap-session/` | `skills/product/execution/wrap-session/` |
-| `ti-rd-playbook/ti-pm/skills/wwas/` | `skills/product/execution/wwas/` |
+| `ti-rd-playbook/ti-pm/skills/ab-test-analysis/` | `skills/product/product-data-analytics/ab-test-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/acquisition-channel-advisor/` | `skills/product/product-go-to-market/acquisition-channel-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/ai-shaped-readiness-advisor/` | `skills/product/product-discovery/ai-shaped-readiness-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/altitude-horizon-framework/` | `skills/product/product-leadership/altitude-horizon-framework/` |
+| `ti-rd-playbook/ti-pm/skills/analyze-feature-requests/` | `skills/product/product-discovery/analyze-feature-requests/` |
+| `ti-rd-playbook/ti-pm/skills/ansoff-matrix/` | `skills/product/product-strategy/ansoff-matrix/` |
+| `ti-rd-playbook/ti-pm/skills/beachhead-segment/` | `skills/product/product-go-to-market/beachhead-segment/` |
+| `ti-rd-playbook/ti-pm/skills/brainstorm-experiments-existing/` | `skills/product/product-discovery/brainstorm-experiments-existing/` |
+| `ti-rd-playbook/ti-pm/skills/brainstorm-experiments-new/` | `skills/product/product-discovery/brainstorm-experiments-new/` |
+| `ti-rd-playbook/ti-pm/skills/brainstorm-ideas-existing/` | `skills/product/product-discovery/brainstorm-ideas-existing/` |
+| `ti-rd-playbook/ti-pm/skills/brainstorm-ideas-new/` | `skills/product/product-discovery/brainstorm-ideas-new/` |
+| `ti-rd-playbook/ti-pm/skills/brainstorm-okrs/` | `skills/product/product-execution/brainstorm-okrs/` |
+| `ti-rd-playbook/ti-pm/skills/business-health-diagnostic/` | `skills/product/product-strategy/business-health-diagnostic/` |
+| `ti-rd-playbook/ti-pm/skills/business-model/` | `skills/product/product-strategy/business-model/` |
+| `ti-rd-playbook/ti-pm/skills/cohort-analysis/` | `skills/product/product-data-analytics/cohort-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/company-research/` | `skills/product/product-strategy/company-research/` |
+| `ti-rd-playbook/ti-pm/skills/competitive-battlecard/` | `skills/product/product-go-to-market/competitive-battlecard/` |
+| `ti-rd-playbook/ti-pm/skills/competitor-analysis/` | `skills/product/product-market-research/competitor-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/context-engineering-advisor/` | `skills/product/product-discovery/context-engineering-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/create-prd/` | `skills/product/product-execution/create-prd/` |
+| `ti-rd-playbook/ti-pm/skills/customer-journey-map/` | `skills/product/product-market-research/customer-journey-map/` |
+| `ti-rd-playbook/ti-pm/skills/customer-journey-map-phuryn/` | `skills/product/product-market-research/customer-journey-map-phuryn/` |
+| `ti-rd-playbook/ti-pm/skills/customer-journey-mapping-workshop/` | `skills/product/product-market-research/customer-journey-mapping-workshop/` |
+| `ti-rd-playbook/ti-pm/skills/define-hypothesis/` | `skills/product/product-discovery/define-hypothesis/` |
+| `ti-rd-playbook/ti-pm/skills/define-jtbd-canvas/` | `skills/product/product-execution/define-jtbd-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/define-opportunity-tree/` | `skills/product/product-discovery/define-opportunity-tree/` |
+| `ti-rd-playbook/ti-pm/skills/define-problem-statement/` | `skills/product/product-execution/define-problem-statement/` |
+| `ti-rd-playbook/ti-pm/skills/deliver-edge-cases/` | `skills/product/product-execution/deliver-edge-cases/` |
+| `ti-rd-playbook/ti-pm/skills/deliver-launch-checklist/` | `skills/product/product-execution/deliver-launch-checklist/` |
+| `ti-rd-playbook/ti-pm/skills/deliver-prd/` | `skills/product/product-execution/deliver-prd/` |
+| `ti-rd-playbook/ti-pm/skills/deliver-release-notes/` | `skills/product/product-execution/deliver-release-notes/` |
+| `ti-rd-playbook/ti-pm/skills/deliver-user-stories/` | `skills/product/product-execution/deliver-user-stories/` |
+| `ti-rd-playbook/ti-pm/skills/develop-adr/` | `skills/product/product-execution/develop-adr/` |
+| `ti-rd-playbook/ti-pm/skills/develop-design-rationale/` | `skills/product/product-execution/develop-design-rationale/` |
+| `ti-rd-playbook/ti-pm/skills/develop-solution-brief/` | `skills/product/product-execution/develop-solution-brief/` |
+| `ti-rd-playbook/ti-pm/skills/develop-spike-summary/` | `skills/product/product-execution/develop-spike-summary/` |
+| `ti-rd-playbook/ti-pm/skills/director-readiness-advisor/` | `skills/product/product-leadership/director-readiness-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/discover-competitive-analysis/` | `skills/product/product-market-research/discover-competitive-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/discover-interview-synthesis/` | `skills/product/product-execution/discover-interview-synthesis/` |
+| `ti-rd-playbook/ti-pm/skills/discover-stakeholder-summary/` | `skills/product/product-execution/discover-stakeholder-summary/` |
+| `ti-rd-playbook/ti-pm/skills/discovery-interview-prep/` | `skills/product/product-discovery/discovery-interview-prep/` |
+| `ti-rd-playbook/ti-pm/skills/discovery-process/` | `skills/product/product-discovery/discovery-process/` |
+| `ti-rd-playbook/ti-pm/skills/draft-nda/` | `skills/product/product-toolkit/draft-nda/` |
+| `ti-rd-playbook/ti-pm/skills/dummy-dataset/` | `skills/product/product-execution/dummy-dataset/` |
+| `ti-rd-playbook/ti-pm/skills/eol-message/` | `skills/product/product-execution/eol-message/` |
+| `ti-rd-playbook/ti-pm/skills/epic-breakdown-advisor/` | `skills/product/product-execution/epic-breakdown-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/epic-hypothesis/` | `skills/product/product-execution/epic-hypothesis/` |
+| `ti-rd-playbook/ti-pm/skills/executive-onboarding-playbook/` | `skills/product/product-leadership/executive-onboarding-playbook/` |
+| `ti-rd-playbook/ti-pm/skills/feature-investment-advisor/` | `skills/product/product-discovery/feature-investment-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/finance-based-pricing-advisor/` | `skills/product/product-strategy/finance-based-pricing-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/finance-metrics-quickref/` | `skills/product/product-strategy/finance-metrics-quickref/` |
+| `ti-rd-playbook/ti-pm/skills/foundation-persona/` | `skills/product/product-execution/foundation-persona/` |
+| `ti-rd-playbook/ti-pm/skills/grammar-check/` | `skills/product/product-toolkit/grammar-check/` |
+| `ti-rd-playbook/ti-pm/skills/growth-loops/` | `skills/product/product-go-to-market/growth-loops/` |
+| `ti-rd-playbook/ti-pm/skills/gtm-motions/` | `skills/product/product-go-to-market/gtm-motions/` |
+| `ti-rd-playbook/ti-pm/skills/gtm-strategy/` | `skills/product/product-go-to-market/gtm-strategy/` |
+| `ti-rd-playbook/ti-pm/skills/ideal-customer-profile/` | `skills/product/product-go-to-market/ideal-customer-profile/` |
+| `ti-rd-playbook/ti-pm/skills/identify-assumptions-existing/` | `skills/product/product-discovery/identify-assumptions-existing/` |
+| `ti-rd-playbook/ti-pm/skills/identify-assumptions-new/` | `skills/product/product-discovery/identify-assumptions-new/` |
+| `ti-rd-playbook/ti-pm/skills/init-project/` | `skills/product/product-execution/init-project/` |
+| `ti-rd-playbook/ti-pm/skills/init-project-jpkb/` | `skills/product/product-execution/init-project-jpkb/` |
+| `ti-rd-playbook/ti-pm/skills/interview-script/` | `skills/product/product-discovery/interview-script/` |
+| `ti-rd-playbook/ti-pm/skills/iterate-lessons-log/` | `skills/product/product-execution/iterate-lessons-log/` |
+| `ti-rd-playbook/ti-pm/skills/iterate-pivot-decision/` | `skills/product/product-execution/iterate-pivot-decision/` |
+| `ti-rd-playbook/ti-pm/skills/iterate-refinement-notes/` | `skills/product/product-execution/iterate-refinement-notes/` |
+| `ti-rd-playbook/ti-pm/skills/iterate-retrospective/` | `skills/product/product-execution/iterate-retrospective/` |
+| `ti-rd-playbook/ti-pm/skills/job-stories/` | `skills/product/product-execution/job-stories/` |
+| `ti-rd-playbook/ti-pm/skills/jobs-to-be-done/` | `skills/product/product-discovery/jobs-to-be-done/` |
+| `ti-rd-playbook/ti-pm/skills/lean-canvas/` | `skills/product/product-strategy/lean-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/lean-ux-canvas/` | `skills/product/product-discovery/lean-ux-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/market-segments/` | `skills/product/product-market-research/market-segments/` |
+| `ti-rd-playbook/ti-pm/skills/market-sizing/` | `skills/product/product-market-research/market-sizing/` |
+| `ti-rd-playbook/ti-pm/skills/marketing-ideas/` | `skills/product/product-marketing-growth/marketing-ideas/` |
+| `ti-rd-playbook/ti-pm/skills/measure-dashboard-requirements/` | `skills/product/product-data-analytics/measure-dashboard-requirements/` |
+| `ti-rd-playbook/ti-pm/skills/measure-experiment-design/` | `skills/product/product-data-analytics/measure-experiment-design/` |
+| `ti-rd-playbook/ti-pm/skills/measure-experiment-results/` | `skills/product/product-data-analytics/measure-experiment-results/` |
+| `ti-rd-playbook/ti-pm/skills/measure-instrumentation-spec/` | `skills/product/product-data-analytics/measure-instrumentation-spec/` |
+| `ti-rd-playbook/ti-pm/skills/metrics-dashboard/` | `skills/product/product-discovery/metrics-dashboard/` |
+| `ti-rd-playbook/ti-pm/skills/monetization-strategy/` | `skills/product/product-strategy/monetization-strategy/` |
+| `ti-rd-playbook/ti-pm/skills/north-star-metric/` | `skills/product/product-marketing-growth/north-star-metric/` |
+| `ti-rd-playbook/ti-pm/skills/opportunity-solution-tree/` | `skills/product/product-discovery/opportunity-solution-tree/` |
+| `ti-rd-playbook/ti-pm/skills/opportunity-solution-tree-phuryn/` | `skills/product/product-discovery/opportunity-solution-tree-phuryn/` |
+| `ti-rd-playbook/ti-pm/skills/outcome-roadmap/` | `skills/product/product-execution/outcome-roadmap/` |
+| `ti-rd-playbook/ti-pm/skills/pestel-analysis/` | `skills/product/product-strategy/pestel-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/pestle-analysis/` | `skills/product/product-strategy/pestle-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/pol-probe/` | `skills/product/product-discovery/pol-probe/` |
+| `ti-rd-playbook/ti-pm/skills/pol-probe-advisor/` | `skills/product/product-discovery/pol-probe-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/porters-five-forces/` | `skills/product/product-strategy/porters-five-forces/` |
+| `ti-rd-playbook/ti-pm/skills/positioning-ideas/` | `skills/product/product-marketing-growth/positioning-ideas/` |
+| `ti-rd-playbook/ti-pm/skills/positioning-statement/` | `skills/product/product-marketing-growth/positioning-statement/` |
+| `ti-rd-playbook/ti-pm/skills/positioning-workshop/` | `skills/product/product-marketing-growth/positioning-workshop/` |
+| `ti-rd-playbook/ti-pm/skills/prd-development/` | `skills/product/product-execution/prd-development/` |
+| `ti-rd-playbook/ti-pm/skills/pre-mortem/` | `skills/product/product-execution/pre-mortem/` |
+| `ti-rd-playbook/ti-pm/skills/press-release/` | `skills/product/product-execution/press-release/` |
+| `ti-rd-playbook/ti-pm/skills/pricing-strategy/` | `skills/product/product-strategy/pricing-strategy/` |
+| `ti-rd-playbook/ti-pm/skills/prioritization-advisor/` | `skills/product/product-discovery/prioritization-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/prioritization-frameworks/` | `skills/product/product-execution/prioritization-frameworks/` |
+| `ti-rd-playbook/ti-pm/skills/prioritize-assumptions/` | `skills/product/product-discovery/prioritize-assumptions/` |
+| `ti-rd-playbook/ti-pm/skills/prioritize-features/` | `skills/product/product-discovery/prioritize-features/` |
+| `ti-rd-playbook/ti-pm/skills/privacy-policy/` | `skills/product/product-toolkit/privacy-policy/` |
+| `ti-rd-playbook/ti-pm/skills/problem-framing-canvas/` | `skills/product/product-strategy/problem-framing-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/problem-statement/` | `skills/product/product-strategy/problem-statement/` |
+| `ti-rd-playbook/ti-pm/skills/product-name/` | `skills/product/product-marketing-growth/product-name/` |
+| `ti-rd-playbook/ti-pm/skills/product-strategy/` | `skills/product/product-strategy/product-strategy/` |
+| `ti-rd-playbook/ti-pm/skills/product-strategy-session/` | `skills/product/product-strategy/product-strategy-session/` |
+| `ti-rd-playbook/ti-pm/skills/product-vision/` | `skills/product/product-strategy/product-vision/` |
+| `ti-rd-playbook/ti-pm/skills/proto-persona/` | `skills/product/product-market-research/proto-persona/` |
+| `ti-rd-playbook/ti-pm/skills/recommendation-canvas/` | `skills/product/product-strategy/recommendation-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/release-notes/` | `skills/product/product-execution/release-notes/` |
+| `ti-rd-playbook/ti-pm/skills/repo-self-update/` | `skills/product/product-execution/repo-self-update/` |
+| `ti-rd-playbook/ti-pm/skills/review-resume/` | `skills/product/product-toolkit/review-resume/` |
+| `ti-rd-playbook/ti-pm/skills/roadmap-planning/` | `skills/product/product-strategy/roadmap-planning/` |
+| `ti-rd-playbook/ti-pm/skills/saas-economics-efficiency-metrics/` | `skills/product/product-strategy/saas-economics-efficiency-metrics/` |
+| `ti-rd-playbook/ti-pm/skills/saas-revenue-growth-metrics/` | `skills/product/product-strategy/saas-revenue-growth-metrics/` |
+| `ti-rd-playbook/ti-pm/skills/sentiment-analysis/` | `skills/product/product-market-research/sentiment-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/skill-authoring-workflow/` | `skills/product/product-execution/skill-authoring-workflow/` |
+| `ti-rd-playbook/ti-pm/skills/sprint-plan/` | `skills/product/product-execution/sprint-plan/` |
+| `ti-rd-playbook/ti-pm/skills/sql-queries/` | `skills/product/product-data-analytics/sql-queries/` |
+| `ti-rd-playbook/ti-pm/skills/stakeholder-map/` | `skills/product/product-execution/stakeholder-map/` |
+| `ti-rd-playbook/ti-pm/skills/startup-canvas/` | `skills/product/product-strategy/startup-canvas/` |
+| `ti-rd-playbook/ti-pm/skills/storyboard/` | `skills/product/product-discovery/storyboard/` |
+| `ti-rd-playbook/ti-pm/skills/summarize-interview/` | `skills/product/product-discovery/summarize-interview/` |
+| `ti-rd-playbook/ti-pm/skills/summarize-meeting/` | `skills/product/product-execution/summarize-meeting/` |
+| `ti-rd-playbook/ti-pm/skills/swot-analysis/` | `skills/product/product-strategy/swot-analysis/` |
+| `ti-rd-playbook/ti-pm/skills/tam-sam-som-calculator/` | `skills/product/product-market-research/tam-sam-som-calculator/` |
+| `ti-rd-playbook/ti-pm/skills/test-scenarios/` | `skills/product/product-execution/test-scenarios/` |
+| `ti-rd-playbook/ti-pm/skills/ti-prd-okrs/` | `skills/product/product-execution/ti-prd-okrs/` |
+| `ti-rd-playbook/ti-pm/skills/ti-strategy-from-playground/` | `skills/product/product-strategy/ti-strategy-from-playground/` |
+| `ti-rd-playbook/ti-pm/skills/ti-write-pob/` | `skills/product/product-execution/ti-write-pob/` |
+| `ti-rd-playbook/ti-pm/skills/ti-write-prd/` | `skills/product/product-execution/ti-write-prd/` |
+| `ti-rd-playbook/ti-pm/skills/user-personas/` | `skills/product/product-market-research/user-personas/` |
+| `ti-rd-playbook/ti-pm/skills/user-segmentation/` | `skills/product/product-market-research/user-segmentation/` |
+| `ti-rd-playbook/ti-pm/skills/user-stories/` | `skills/product/product-execution/user-stories/` |
+| `ti-rd-playbook/ti-pm/skills/user-story/` | `skills/product/product-execution/user-story/` |
+| `ti-rd-playbook/ti-pm/skills/user-story-mapping/` | `skills/product/product-execution/user-story-mapping/` |
+| `ti-rd-playbook/ti-pm/skills/user-story-mapping-workshop/` | `skills/product/product-discovery/user-story-mapping-workshop/` |
+| `ti-rd-playbook/ti-pm/skills/user-story-splitting/` | `skills/product/product-execution/user-story-splitting/` |
+| `ti-rd-playbook/ti-pm/skills/value-prop-statements/` | `skills/product/product-marketing-growth/value-prop-statements/` |
+| `ti-rd-playbook/ti-pm/skills/value-proposition/` | `skills/product/product-strategy/value-proposition/` |
+| `ti-rd-playbook/ti-pm/skills/vp-cpo-readiness-advisor/` | `skills/product/product-leadership/vp-cpo-readiness-advisor/` |
+| `ti-rd-playbook/ti-pm/skills/workshop-facilitation/` | `skills/product/product-discovery/workshop-facilitation/` |
+| `ti-rd-playbook/ti-pm/skills/wrap-session/` | `skills/product/product-execution/wrap-session/` |
+| `ti-rd-playbook/ti-pm/skills/wwas/` | `skills/product/product-execution/wwas/` |
 
 ## ti-rd-playbook -- PM Workflows (10)
 
 | Original Location | Orbit Location |
 |---|---|
-| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-discovery-opportunity.md` | `skills/product/execution/workflow-guide-me-to-discovery-opportunity/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-experiment-design-and-measurement.md` | `skills/product/execution/workflow-guide-me-to-experiment-design-and-measurement/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-feature-prioritization-and-investment.md` | `skills/product/execution/workflow-guide-me-to-feature-prioritization-and-investment/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-roadmap-and-release-planning.md` | `skills/product/execution/workflow-guide-me-to-roadmap-and-release-planning/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-doc-analytics.md` | `skills/product/execution/workflow-write-doc-analytics/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-pob.md` | `skills/product/execution/workflow-write-pob/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-prd-assessment.md` | `skills/product/execution/workflow-write-prd-assessment/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-prd.md` | `skills/product/execution/workflow-write-prd/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-stakeholder-exec-summary.md` | `skills/product/execution/workflow-write-stakeholder-exec-summary/` |
-| `ti-rd-playbook/ti-pm/.agents/workflows/write-strategy-from-playground.md` | `skills/product/execution/workflow-write-strategy-from-playground/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-discovery-opportunity.md` | `skills/product/product-execution/workflow-guide-me-to-discovery-opportunity/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-experiment-design-and-measurement.md` | `skills/product/product-execution/workflow-guide-me-to-experiment-design-and-measurement/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-feature-prioritization-and-investment.md` | `skills/product/product-execution/workflow-guide-me-to-feature-prioritization-and-investment/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/guide-me-to-roadmap-and-release-planning.md` | `skills/product/product-execution/workflow-guide-me-to-roadmap-and-release-planning/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-doc-analytics.md` | `skills/product/product-execution/workflow-write-doc-analytics/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-pob.md` | `skills/product/product-execution/workflow-write-pob/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-prd-assessment.md` | `skills/product/product-execution/workflow-write-prd-assessment/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-prd.md` | `skills/product/product-execution/workflow-write-prd/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-stakeholder-exec-summary.md` | `skills/product/product-execution/workflow-write-stakeholder-exec-summary/` |
+| `ti-rd-playbook/ti-pm/.agents/workflows/write-strategy-from-playground.md` | `skills/product/product-execution/workflow-write-strategy-from-playground/` |
 
 ## ti-rd-playbook -- PM Commands (5)
 
 | Original Location | Orbit Location |
 |---|---|
-| `ti-rd-playbook/ti-pm/commands/discover.md` | `skills/product/execution/command-discover/` |
-| `ti-rd-playbook/ti-pm/commands/plan-launch.md` | `skills/product/execution/command-plan-launch/` |
-| `ti-rd-playbook/ti-pm/commands/plan-okrs.md` | `skills/product/execution/command-plan-okrs/` |
-| `ti-rd-playbook/ti-pm/commands/sprint.md` | `skills/product/execution/command-sprint/` |
-| `ti-rd-playbook/ti-pm/commands/strategy.md` | `skills/product/execution/command-strategy/` |
+| `ti-rd-playbook/ti-pm/commands/discover.md` | `skills/product/product-execution/command-discover/` |
+| `ti-rd-playbook/ti-pm/commands/plan-launch.md` | `skills/product/product-execution/command-plan-launch/` |
+| `ti-rd-playbook/ti-pm/commands/plan-okrs.md` | `skills/product/product-execution/command-plan-okrs/` |
+| `ti-rd-playbook/ti-pm/commands/sprint.md` | `skills/product/product-execution/command-sprint/` |
+| `ti-rd-playbook/ti-pm/commands/strategy.md` | `skills/product/product-execution/command-strategy/` |
 
 ## ti-rd-playbook -- Tech Lead Skills (21 skills)
 
@@ -481,14 +483,14 @@
 
 | Original Location | Orbit Location |
 |---|---|
-| `Claude-Skills-main/product-team/ab-test-setup/` | `skills/product/ab-test-setup/` |
-| `Claude-Skills-main/product-team/agile-product-owner/` | `skills/product/agile-product-owner/` |
-| `Claude-Skills-main/product-team/design-system-lead/` | `skills/product/design-system-lead/` |
+| `Claude-Skills-main/product-team/ab-test-setup/` | `skills/product/product-ab-test-setup/` |
+| `Claude-Skills-main/product-team/agile-product-owner/` | `skills/product/product-agile-product-owner/` |
+| `Claude-Skills-main/product-team/design-system-lead/` | `skills/product/product-design-system-lead/` |
 | `Claude-Skills-main/product-team/product-designer/` | `skills/product/product-designer/` |
 | `Claude-Skills-main/product-team/product-manager-toolkit/` | `skills/product/product-manager-toolkit/` |
 | `Claude-Skills-main/product-team/product-strategist/` | `skills/product/product-strategist/` |
-| `Claude-Skills-main/product-team/ui-design-system/` | `skills/product/ui-design-system/` |
-| `Claude-Skills-main/product-team/ux-researcher-designer/` | `skills/product/ux-researcher-designer/` |
+| `Claude-Skills-main/product-team/ui-design-system/` | `skills/product/product-ui-design-system/` |
+| `Claude-Skills-main/product-team/ux-researcher-designer/` | `skills/product/product-ux-researcher-designer/` |
 
 ## Claude-Skills-main -- Other Departments
 
@@ -557,18 +559,18 @@
 | (adapted from `superpowers/skills/using-superpowers/`) | `skills/_bootstrap/using-orbit/` |
 | (new: merged paperclip + gstack) | `memory/SKILL.md` |
 
-## ti-skills (Thought Industries website) (7 skills)
+## Thought Industries website (7 positioning skills)
 
-Native to this repository—not imported from an upstream skills repo. Grounded in [thoughtindustries.com](https://www.thoughtindustries.com/) public positioning; `metadata.source: thought-industries-website`, `metadata.department: ti-skills`.
+Native to the TI marketplace repo—not imported from ti-rd-playbook zip paths. Grounded in [thoughtindustries.com](https://www.thoughtindustries.com/) public positioning. Each skill is its **own folder directly under `skills/`** (not nested under `skills/ti-skills/`). Use **`metadata.source: thought-industries-website`** and **`metadata.department: ti-skills`** in frontmatter. The **catalog** lists these under the path basename (e.g. `ti-clp-platform-overview`) as the grouping key.
 
-| Original / basis | Orbit Location |
+| Original / basis | Location in this repo |
 |---|---|
-| Public site — Customer Learning & Intelligence Platform overview | `skills/ti-skills/ti-clp-platform-overview/` |
-| Public site — six external-audience use cases | `skills/ti-skills/ti-external-audience-use-cases/` |
-| Public site — learning experience & authoring | `skills/ti-skills/ti-learning-experience-authoring/` |
-| Public site — personalization & distribution | `skills/ti-skills/ti-content-distribution-personalization/` |
-| Public site — monetization & eCommerce | `skills/ti-skills/ti-training-monetization-ecommerce/` |
-| Public site — data, analytics & ROI | `skills/ti-skills/ti-learning-data-analytics-roi/` |
-| Public site — integrate, extend & headless | `skills/ti-skills/ti-integrate-extend-headless/` |
+| Public site — Customer Learning & Intelligence Platform overview | `skills/ti-clp-platform-overview/` |
+| Public site — six external-audience use cases | `skills/ti-external-audience-use-cases/` |
+| Public site — learning experience & authoring | `skills/ti-learning-experience-authoring/` |
+| Public site — personalization & distribution | `skills/ti-content-distribution-personalization/` |
+| Public site — monetization & eCommerce | `skills/ti-training-monetization-ecommerce/` |
+| Public site — data, analytics & ROI | `skills/ti-learning-data-analytics-roi/` |
+| Public site — integrate, extend & headless | `skills/ti-integrate-extend-headless/` |
 
-Index: `skills/ti-skills/README.md`.
+Discoverability: **`catalog/skills-by-department.md`** (filter by `ti-` paths) or search `skills/` for `ti-`.

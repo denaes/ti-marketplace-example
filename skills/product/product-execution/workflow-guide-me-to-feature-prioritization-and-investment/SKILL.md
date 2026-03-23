@@ -22,7 +22,7 @@ Prioritize a list of features or evaluate a single feature investment (build vs 
 ## Prerequisites
 
 - Input: list of features (titles + short description) or one feature with context (segment, revenue impact, effort)
-- Skills: `skills/product/discovery/prioritize-features/SKILL.md`, `skills/product/execution/prioritization-frameworks/SKILL.md`, `skills/product/discovery/analyze-feature-requests/SKILL.md`, `skills/product/discovery/feature-investment-advisor/SKILL.md`
+- Skills: `skills/product/product-discovery/prioritize-features/SKILL.md`, `skills/product/product-execution/prioritization-frameworks/SKILL.md`, `skills/product/product-discovery/analyze-feature-requests/SKILL.md`, `skills/product/product-discovery/feature-investment-advisor/SKILL.md`
 
 ## Step 1: Clarify scope and mode
 
@@ -57,4 +57,4 @@ Prioritize a list of features or evaluate a single feature investment (build vs 
 ## References
 
 - Conventions: `standards/conventions.md`
-- Roadmap: `skills/product/execution/workflow-guide-me-to-roadmap-and-release-planning/SKILL.md`
+- Roadmap: `skills/product/product-execution/workflow-guide-me-to-roadmap-and-release-planning/SKILL.md`

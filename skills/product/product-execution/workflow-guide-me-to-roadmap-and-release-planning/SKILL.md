@@ -22,7 +22,7 @@ Produce an outcome-oriented roadmap, prioritize initiatives or features, and dra
 ## Prerequisites
 
 - Input: list of initiatives/features, target timeframe, and (if release notes) list of changes or epic summaries
-- Skills: `skills/product/strategy/roadmap-planning/SKILL.md`, `skills/product/execution/outcome-roadmap/SKILL.md`, `skills/product/execution/prioritization-frameworks/SKILL.md`, `skills/product/discovery/prioritize-features/SKILL.md`, `skills/product/execution/release-notes/SKILL.md`, `skills/product/execution/deliver-release-notes/SKILL.md`
+- Skills: `skills/product/product-strategy/roadmap-planning/SKILL.md`, `skills/product/product-execution/outcome-roadmap/SKILL.md`, `skills/product/product-execution/prioritization-frameworks/SKILL.md`, `skills/product/product-discovery/prioritize-features/SKILL.md`, `skills/product/product-execution/release-notes/SKILL.md`, `skills/product/product-execution/deliver-release-notes/SKILL.md`
 
 ## Step 1: Clarify scope and output
 

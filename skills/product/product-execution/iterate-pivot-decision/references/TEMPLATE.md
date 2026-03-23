@@ -31,7 +31,7 @@ status: draft
 
 ### What We're Doing Now
 
-[Description of current product/strategy/approach]
+[Description of current product/product-strategy/approach]
 
 ### Key Metrics
 

@@ -203,7 +203,7 @@ def infer_source(dir_name: str, department: str, fm: dict, skill_path: Path = No
 
 
 def infer_subdomain(skill_path: Path, skills_root: Path) -> str:
-    """Detect if the skill is in a subdomain (e.g., product/discovery)."""
+    """Detect if the skill is in a subdomain (e.g., product/product-discovery)."""
     rel = skill_path.relative_to(skills_root)
     parts = list(rel.parts)
     if len(parts) >= 3:

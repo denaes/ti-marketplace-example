@@ -1,6 +1,6 @@
 {
-  "name": "orbit",
-  "version": "1.0.0",
+  "name": "ti-marketplace-example",
+  "version": "3.0.0",
   "type": "module",
   "description": "Unified AI skills library organized by department",
   "main": ".opencode/plugins/orbit.js",
@@ -20,6 +20,7 @@
     "normalize": "python3 scripts/normalize-frontmatter.py",
     "normalize:dry": "python3 scripts/normalize-frontmatter.py --dry-run",
     "fix-refs": "python3 scripts/fix-references.py",
-    "fix-refs:dry": "python3 scripts/fix-references.py --dry-run"
+    "fix-refs:dry": "python3 scripts/fix-references.py --dry-run",
+    "bump-version": "python3 scripts/bump-release-version.py"
   }
 }

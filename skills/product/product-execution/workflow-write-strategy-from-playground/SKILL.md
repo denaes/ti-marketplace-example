@@ -21,7 +21,7 @@ Produce a **rich strategic document** from the Strategic Analysis Playground. Ou
 ## Prerequisites
 
 - Playground file (e.g. `Strategic Analysis_ Playground.md` at repo root) or user-provided strategy/backwards doc
-- Skill: `skills/product/strategy/ti-strategy-from-playground/SKILL.md`
+- Skill: `skills/product/product-strategy/ti-strategy-from-playground/SKILL.md`
 
 ## Step 1: Get the input
 
@@ -55,6 +55,6 @@ Ask the user:
 
 ## References
 
-- **Skill:** `skills/product/strategy/ti-strategy-from-playground/SKILL.md`
+- **Skill:** `skills/product/product-strategy/ti-strategy-from-playground/SKILL.md`
 - **Playground:** Strategic Analysis_ Playground.md (repo root)
-- **OKRs:** `skills/product/execution/ti-prd-okrs/SKILL.md` (optional follow-up)
+- **OKRs:** `skills/product/product-execution/ti-prd-okrs/SKILL.md` (optional follow-up)

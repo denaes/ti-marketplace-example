@@ -79,4 +79,4 @@ Use **TI terminology**: course, learning path, Panorama, sublicense, C1/C2, etc.
 
 - **Template:** `templates/product/[TEMPLATE] Product Brief .md`
 - **Conventions:** `standards/conventions.md`
-- **Related (full PRD with staged criteria):** `skills/product/execution/ti-write-prd/SKILL.md` — use when the opportunity is approved and needs full PRD with staged features/acceptance criteria
+- **Related (full PRD with staged criteria):** `skills/product/product-execution/ti-write-prd/SKILL.md` — use when the opportunity is approved and needs full PRD with staged features/acceptance criteria

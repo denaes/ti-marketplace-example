@@ -15,10 +15,10 @@ When the user asks you to do something, identify which department and skill appl
 | Architecture, design patterns, API design | `skills/engineering/` | senior-architect, api-design-reviewer, database-designer |
 | DevOps, CI/CD, infrastructure | `skills/engineering/` | automation-ci, ci-cd-pipeline-builder, senior-devops |
 | Write epics, stories, estimate, plan sprint | `skills/engineering-management/` | workflow-write-story, story-estimation, capacity-planning |
-| Write PRD, product brief, assess PRD | `skills/product/execution/` | workflow-write-prd, workflow-write-prd-assessment, ti-write-prd |
-| Discovery, interviews, problem validation | `skills/product/discovery/` | define-problem-statement, discover-interview-synthesis |
-| Strategy, competitive analysis, positioning | `skills/product/strategy/` | competitive-analysis, lean-canvas, swot-analysis |
-| OKRs, roadmap, release planning | `skills/product/execution/` | command-plan-okrs, outcome-roadmap, workflow-guide-me-to-roadmap-and-release-planning |
+| Write PRD, product brief, assess PRD | `skills/product/product-execution/` | workflow-write-prd, workflow-write-prd-assessment, ti-write-prd |
+| Discovery, interviews, problem validation | `skills/product/product-discovery/` | define-problem-statement, discover-interview-synthesis |
+| Strategy, competitive analysis, positioning | `skills/product/product-strategy/` | competitive-analysis, lean-canvas, swot-analysis |
+| OKRs, roadmap, release planning | `skills/product/product-execution/` | command-plan-okrs, outcome-roadmap, workflow-guide-me-to-roadmap-and-release-planning |
 | Content, blog, copywriting | `skills/marketing/` | content-strategy, content-creator, copywriting |
 | SEO, analytics, email campaigns | `skills/marketing/` | seo-specialist, analytics-tracking, email-marketing |
 | Design review, UX, design system | `skills/design/` | design-consultation, design-review |
@@ -31,7 +31,7 @@ When the user asks you to do something, identify which department and skill appl
 | Business growth, CRO, pricing | `skills/operations/business-growth/` | pricing-strategy, signup-flow-cro |
 | Compliance, GDPR, SOC 2 | `skills/compliance/` | gdpr-dsgvo-expert, soc2-compliance |
 | Scrum, QA, release management | `skills/project-management/` | agile-coach, release-manager |
-| Thought Industries platform, customer learning, external training | `skills/ti-skills/` | ti-clp-platform-overview, ti-external-audience-use-cases, ti-training-monetization-ecommerce |
+| Thought Industries platform, customer learning, external training | `skills/ti-*/` (e.g. `skills/ti-clp-platform-overview/`) | ti-clp-platform-overview, ti-external-audience-use-cases, ti-training-monetization-ecommerce |
 
 ## Workflow vs Skill
 

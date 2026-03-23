@@ -23,7 +23,7 @@ Produce a Product Opportunity Brief for an escalation, opportunity, revenue bloc
 
 - Input: description of the opportunity or problem (paste, email, or conversation)
 - TI Product Brief template: `templates/product/[TEMPLATE] Product Brief .md` (for section reference)
-- Skill: `skills/product/execution/ti-write-pob/SKILL.md`
+- Skill: `skills/product/product-execution/ti-write-pob/SKILL.md`
 
 ## Step 1: Clarify type and scope
 
@@ -32,7 +32,7 @@ Produce a Product Opportunity Brief for an escalation, opportunity, revenue bloc
 
 ## Step 2: Read reference materials
 
-1. **ti-write-pob skill** — `skills/product/execution/ti-write-pob/SKILL.md` (structure, sections for POB)
+1. **ti-write-pob skill** — `skills/product/product-execution/ti-write-pob/SKILL.md` (structure, sections for POB)
 2. **Product Brief template** — `templates/product/[TEMPLATE] Product Brief .md` (reuse relevant sections: problem, objective, scope, success criteria)
 
 ## Step 3: Draft the POB
@@ -49,4 +49,4 @@ Produce a Product Opportunity Brief for an escalation, opportunity, revenue bloc
 ## References
 
 - Conventions: `standards/conventions.md`
-- Full PRD workflow: `skills/product/execution/workflow-write-prd/SKILL.md`
+- Full PRD workflow: `skills/product/product-execution/workflow-write-prd/SKILL.md`

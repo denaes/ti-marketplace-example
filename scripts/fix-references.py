@@ -6,9 +6,9 @@ Rewrites:
   ti-pm/skills/<name>/SKILL.md   → skills/product/.../<name>/SKILL.md (orbit path)
   ti-em/skills/<name>/SKILL.md   → skills/engineering-management/<name>/SKILL.md
   ti-eng/skills/<name>/SKILL.md  → skills/engineering/<name>/SKILL.md
-  ti-pm/.agents/workflows/<x>.md → skills/product/execution/workflow-<x>/SKILL.md
+  ti-pm/.agents/workflows/<x>.md → skills/product/product-execution/workflow-<x>/SKILL.md
   ti-em/.agents/workflows/<x>.md → skills/engineering-management/workflow-<x>/SKILL.md
-  ti-pm/commands/<x>.md          → skills/product/execution/command-<x>/SKILL.md
+  ti-pm/commands/<x>.md          → skills/product/product-execution/command-<x>/SKILL.md
   docs/CONVENTIONS.md            → standards/conventions.md
   docs/templates/<x>             → templates/product/<x>
 """

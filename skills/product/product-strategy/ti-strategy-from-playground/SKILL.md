@@ -61,5 +61,5 @@ Generate markdown in this order. Use Playground content to fill each section; tu
 ## References
 
 - **Source of truth:** Strategic Analysis_ Playground.md (repo root or path provided by user)
-- **Workflow:** `skills/product/execution/workflow-write-strategy-from-playground/SKILL.md`
+- **Workflow:** `skills/product/product-execution/workflow-write-strategy-from-playground/SKILL.md`
 - **Working Backwards format:** See "Working Backwards Output" in the Playground
