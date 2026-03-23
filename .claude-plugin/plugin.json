@@ -1,7 +1,7 @@
 {
   "name": "ti-plugin",
   "description": "Unified AI skills library organized by department: engineering, product, marketing, design, sales, operations, and more",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": {
     "name": "Thought Industries",
     "email": "julien.denaes@thoughtindustries.com"
@@ -9,5 +9,13 @@
   "homepage": "https://github.com/denaes/ti-marketplace-example",
   "repository": "https://github.com/denaes/ti-marketplace-example",
   "license": "MIT",
-  "keywords": ["skills", "engineering", "product", "marketing", "design", "sales", "operations"]
+  "keywords": [
+    "skills",
+    "engineering",
+    "product",
+    "marketing",
+    "design",
+    "sales",
+    "operations"
+  ]
 }
