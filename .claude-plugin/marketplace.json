@@ -9,7 +9,7 @@
     {
       "name": "ti-plugin",
       "description": "A simple plugin for the Thought Industries marketplace that allows you to know what Thought Industries does and how to use the platform.",
-      "version": "3.2.0",
+      "version": "3.2.1",
       "source": "./",
       "author": {
         "name": "Thought Industries 101",

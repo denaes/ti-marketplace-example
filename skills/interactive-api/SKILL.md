@@ -30,19 +30,28 @@ Load **fake but realistic** comment objects from the public demo API **[JSONPlac
    node skills/interactive-api/fetch-jsonplaceholder-comments.js
    ```
 
-2. **Optional query** — limit by post:
+2. **Optional query** — limit by post (returns an array):
 
    ```bash
    node skills/interactive-api/fetch-jsonplaceholder-comments.js --postId=1
    ```
 
-3. **Pipe or save** — stdout is JSON (array). Example:
+3. **Single comment by id** — path style, same as
+   [`/comments/3`](https://jsonplaceholder.typicode.com/comments/3) (returns one object):
+
+   ```bash
+   node skills/interactive-api/fetch-jsonplaceholder-comments.js --id=3
+   ```
+
+   Do not combine `--id` and `--postId` in one run.
+
+4. **Pipe or save** — stdout is JSON (array for list / `postId` filter, object for `--id`). Example:
 
    ```bash
    node skills/interactive-api/fetch-jsonplaceholder-comments.js --postId=1 | head -c 2000
    ```
 
-4. **Failures** — non-2xx responses or network errors exit with code `1` and print a message to stderr.
+5. **Failures** — non-2xx responses or network errors exit with code `1` and print a message to stderr.
 
 ## Data shape (per comment)
 
@@ -58,9 +67,10 @@ Load **fake but realistic** comment objects from the public demo API **[JSONPlac
 
 - API docs / playground: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
 - Comments collection: [https://jsonplaceholder.typicode.com/comments](https://jsonplaceholder.typicode.com/comments)
+- Single comment (by id): e.g. [https://jsonplaceholder.typicode.com/comments/3](https://jsonplaceholder.typicode.com/comments/3)
 
 ## Quality checklist
 
 - [ ] Node 18+ available (`node -v`)
 - [ ] Network allowed to `jsonplaceholder.typicode.com`
-- [ ] Output parsed as JSON array before assuming structure
+- [ ] Output parsed as JSON; expect an **array** for collection endpoints and a **single object** for `--id`
