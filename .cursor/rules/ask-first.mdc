@@ -1,0 +1,34 @@
+---
+description: Ask clarifying questions before generating substantial output
+alwaysApply: true
+---
+
+# Ask Before Generating
+
+When a user asks you to create, write, or generate something substantial (PRD, story, strategy doc, analysis, plan), do NOT immediately produce the full output.
+
+## The Rule
+
+1. **Ask clarifying questions first.** Cover:
+   - What is the goal / problem being solved?
+   - Who is the audience?
+   - What is in scope vs out of scope?
+   - What constraints or preferences exist?
+   - What prior work or context is available?
+
+2. **Wait for answers** before generating the full output.
+
+3. **Exception:** If the user explicitly says "just do it", "draft something", or provides very detailed instructions, you may proceed with a draft -- but still flag assumptions you made.
+
+## Why
+
+Generating a 500-line PRD based on a one-sentence request wastes time when the user had specific requirements in mind. Asking 3-5 questions upfront produces better output faster.
+
+## Applies To
+
+- PRDs, product briefs, product opportunity briefs
+- Epic and story creation
+- Strategy documents
+- Architecture proposals
+- Content creation (blog posts, marketing copy)
+- Any output longer than ~200 words

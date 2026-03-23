@@ -1,0 +1,37 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'catalog/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'catalog/**'
+      - 'scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate frontmatter
+        run: python3 scripts/validate-skills.py --quick
+
+      - name: Check catalog freshness
+        run: |
+          python3 catalog/generate-catalog.py
+          if ! git diff --quiet catalog/; then
+            echo "::error::Catalog is out of date. Run 'python3 catalog/generate-catalog.py' and commit the changes."
+            git diff catalog/
+            exit 1
+          fi

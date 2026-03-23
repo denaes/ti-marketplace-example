@@ -1,0 +1,20 @@
+{
+  "name": "ti-marketplace",
+  "description": "Internal marketplace for Thought Industries core skills library",
+  "owner": {
+    "name": "Julien Denaes",
+    "email": "julien.denaes@thoughtindustries.com"
+  },
+  "plugins": [
+    {
+      "name": "ti-plugin",
+      "description": "A simple plugin for the Thought Industries marketplace that allows you to know what Thought Industries does and how to use the platform.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Thought Industries 101",
+        "email": "julien.denaes@thoughtindustries.com"
+      }
+    }
+  ]
+}

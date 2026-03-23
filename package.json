@@ -1,0 +1,25 @@
+{
+  "name": "orbit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Unified AI skills library organized by department",
+  "main": ".opencode/plugins/orbit.js",
+  "license": "MIT",
+  "author": {
+    "name": "Thought Industries",
+    "email": "julien.denaes@thoughtindustries.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denaes/ti-marketplace-example.git"
+  },
+  "scripts": {
+    "catalog": "python3 catalog/generate-catalog.py",
+    "validate": "python3 scripts/validate-skills.py",
+    "validate:quick": "python3 scripts/validate-skills.py --quick",
+    "normalize": "python3 scripts/normalize-frontmatter.py",
+    "normalize:dry": "python3 scripts/normalize-frontmatter.py --dry-run",
+    "fix-refs": "python3 scripts/fix-references.py",
+    "fix-refs:dry": "python3 scripts/fix-references.py --dry-run"
+  }
+}

@@ -1,0 +1,46 @@
+---
+description: Route user requests to the right Orbit department and skill
+alwaysApply: true
+---
+
+# Orbit Skill Routing
+
+When the user asks you to do something, identify which department and skill applies before acting.
+
+## Department Routing
+
+| User Intent | Department | Key Skills |
+|---|---|---|
+| Write code, fix bugs, refactor, review PR | `skills/engineering/` | test-driven-development, systematic-debugging, code-review-checklist, refactoring |
+| Architecture, design patterns, API design | `skills/engineering/` | senior-architect, api-design-reviewer, database-designer |
+| DevOps, CI/CD, infrastructure | `skills/engineering/` | automation-ci, ci-cd-pipeline-builder, senior-devops |
+| Write epics, stories, estimate, plan sprint | `skills/engineering-management/` | workflow-write-story, story-estimation, capacity-planning |
+| Write PRD, product brief, assess PRD | `skills/product/execution/` | workflow-write-prd, workflow-write-prd-assessment, ti-write-prd |
+| Discovery, interviews, problem validation | `skills/product/discovery/` | define-problem-statement, discover-interview-synthesis |
+| Strategy, competitive analysis, positioning | `skills/product/strategy/` | competitive-analysis, lean-canvas, swot-analysis |
+| OKRs, roadmap, release planning | `skills/product/execution/` | command-plan-okrs, outcome-roadmap, workflow-guide-me-to-roadmap-and-release-planning |
+| Content, blog, copywriting | `skills/marketing/` | content-strategy, content-creator, copywriting |
+| SEO, analytics, email campaigns | `skills/marketing/` | seo-specialist, analytics-tracking, email-marketing |
+| Design review, UX, design system | `skills/design/` | design-consultation, design-review |
+| Sales strategy, account management | `skills/sales/` | account-executive, solutions-architect |
+| Data analysis, BI, dashboards | `skills/data-analytics/` | analytics-engineer, data-analysis |
+| Hiring, people management, HR | `skills/hr-people/` | talent-acquisition, people-analytics |
+| Financial analysis, budgeting | `skills/finance/` | financial-analyst |
+| Strategic advisory, board prep | `skills/executive/` | ceo-advisor, cto-advisor |
+| EOS, rocks, scorecard, L10 | `skills/operations/eos/` | ceos-rocks, ceos-l10, ceos-scorecard |
+| Business growth, CRO, pricing | `skills/operations/business-growth/` | pricing-strategy, signup-flow-cro |
+| Compliance, GDPR, SOC 2 | `skills/compliance/` | gdpr-dsgvo-expert, soc2-compliance |
+| Scrum, QA, release management | `skills/project-management/` | agile-coach, release-manager |
+| Thought Industries platform, customer learning, external training | `skills/ti-skills/` | ti-clp-platform-overview, ti-external-audience-use-cases, ti-training-monetization-ecommerce |
+
+## Workflow vs Skill
+
+- If the task is a single focused activity, use a **skill** (type: skill)
+- If the task requires orchestrating multiple skills in sequence, look for a **workflow** (type: workflow)
+- If the user invokes a slash-command pattern, check **commands** (type: command)
+
+## Always
+
+1. Check for a matching skill before responding
+2. If you find a matching skill, read and follow it
+3. If multiple skills apply, use process skills first, then implementation, then domain
