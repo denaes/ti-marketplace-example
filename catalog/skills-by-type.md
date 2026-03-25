@@ -1,8 +1,8 @@
 # Orbit Skills by Type
 
-Total: **179 skills**
+Total: **181 skills**
 
-## Skill (164)
+## Skill (166)
 
 | Skill | Department | Source | Description |
 |-------|-----------|--------|-------------|
@@ -165,6 +165,8 @@ Total: **179 skills**
 | ux-researcher-designer | product-ux-researcher-designer | ti-rd-playbook | UX research and design toolkit for Senior UX Designer/Researcher including data-driven persona generation, journey mappi |
 | ti-clp-platform-overview | ti-clp-platform-overview | thought-industries-website | Summarize Thought Industries as a Customer Learning & Intelligence Platform: create, deliver, monetize, and measure trai |
 | ti-content-distribution-personalization | ti-content-distribution-personalization | thought-industries-website | Apply Thought Industries’ “personalization at scale” story: right training to the right audience across customers, partn |
+| ti-course-create | ti-course-create | thought-industries-api | Create Thought Industries courses via the Incoming REST API (course groups, micro-courses, articles, SCORM/xAPI). Use wh |
+| ti-course-update | ti-course-update | thought-industries-api | Update Thought Industries course content via the Incoming REST API (partial updates to course groups, sessions, sections |
 | ti-external-audience-use-cases | ti-external-audience-use-cases | thought-industries-website | Map work to Thought Industries’ six marketed use cases: customer training, partner enablement, member education, profess |
 | ti-integrate-extend-headless | ti-integrate-extend-headless | thought-industries-website | Describe Thought Industries’ integration story: headless framework, webhooks, APIs, prebuilt and custom integrations, an |
 | ti-learning-data-analytics-roi | ti-learning-data-analytics-roi | thought-industries-website | Structure analytics and ROI narratives for Thought Industries: performance of the learning site, content, and monetizati |

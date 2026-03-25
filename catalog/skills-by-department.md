@@ -1,6 +1,6 @@
 # Orbit Skills by Department
 
-Total: **179 skills** across **25 departments**
+Total: **181 skills** across **27 departments**
 
 ## Interactive Api (1 skills)
 
@@ -275,6 +275,18 @@ Total: **179 skills** across **25 departments**
 | Skill | Type | Path | Description |
 |-------|------|------|-------------|
 | ti-content-distribution-personalization | skill | `skills/ti-content-distribution-personalization` | Apply Thought Industries’ “personalization at scale” story: right training to the right audience across customers, partners, members, and prospects vi |
+
+## Ti Course Create (1 skills)
+
+| Skill | Type | Path | Description |
+|-------|------|------|-------------|
+| ti-course-create | skill | `skills/ti-course-create` | Create Thought Industries courses via the Incoming REST API (course groups, micro-courses, articles, SCORM/xAPI). Use when the user wants to programma |
+
+## Ti Course Update (1 skills)
+
+| Skill | Type | Path | Description |
+|-------|------|------|-------------|
+| ti-course-update | skill | `skills/ti-course-update` | Update Thought Industries course content via the Incoming REST API (partial updates to course groups, sessions, sections, lessons, topics). Use when t |
 
 ## Ti External Audience Use Cases (1 skills)
 

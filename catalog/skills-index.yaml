@@ -1,5 +1,5 @@
 # Orbit Skills Index
-# Generated automatically - 179 skills
+# Generated automatically - 181 skills
 
 skills:
   - name: "interactive-api"
@@ -1381,6 +1381,20 @@ skills:
     type: "skill"
     source: "thought-industries-website"
     description: "Apply Thought Industries’ “personalization at scale” story: right training to the right audience across customers, partners, members, and prospects via tagging and flexible distribution. Use when designing segments, entitlements, or multi-audience learning sites."
+
+  - name: "ti-course-create"
+    department: "ti-course-create"
+    path: "skills/ti-course-create"
+    type: "skill"
+    source: "thought-industries-api"
+    description: "Create Thought Industries courses via the Incoming REST API (course groups, micro-courses, articles, SCORM/xAPI). Use when the user wants to programmatically create TI content from structured data or scripts."
+
+  - name: "ti-course-update"
+    department: "ti-course-update"
+    path: "skills/ti-course-update"
+    type: "skill"
+    source: "thought-industries-api"
+    description: "Update Thought Industries course content via the Incoming REST API (partial updates to course groups, sessions, sections, lessons, topics). Use when the user wants to change titles, HTML bodies, SCORM URLs, or add hierarchy nodes using known UUIDs."
 
   - name: "ti-external-audience-use-cases"
     department: "ti-external-audience-use-cases"
