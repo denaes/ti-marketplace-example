@@ -10,7 +10,8 @@
 import { readFile } from "node:fs/promises";
 import { createInterface } from "node:readline";
 
-const PATH = "/incoming/v2/content/course/create";
+/** Relative to …/incoming/v2 (see toApiRoot). */
+const PATH = "/content/course/create";
 
 /** @typedef {Record<string, unknown>} JsonObject */
 
