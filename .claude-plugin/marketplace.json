@@ -11,12 +11,16 @@
     {
       "name": "ti-plugin",
       "description": "A simple plugin for the Thought Industries marketplace that allows you to know what Thought Industries does and how to use the platform.",
-      "version": "3.3.2",
-      "source": "./",
+      "version": "3.3.3",
+      "source": {
+        "source": "github",
+        "repo": "denaes/ti-marketplace-example"
+      },
       "author": {
         "name": "Thought Industries 101",
         "email": "julien.denaes@thoughtindustries.com"
-      }
+      },
+      "strict": true
     }
   ]
 }
