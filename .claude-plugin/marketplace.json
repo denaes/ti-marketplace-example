@@ -1,26 +1,20 @@
 {
   "name": "ti-marketplace",
+  "description": "Internal marketplace for Thought Industries core skills library",
   "owner": {
     "name": "Julien Denaes",
     "email": "julien.denaes@thoughtindustries.com"
   },
-  "metadata": {
-    "description": "Internal marketplace for Thought Industries core skills library"
-  },
   "plugins": [
     {
       "name": "ti-plugin",
-      "description": "A simple plugin for the Thought Industries marketplace that allows you to know what Thought Industries does and how to use the platform.",
-      "version": "3.3.3",
-      "source": {
-        "source": "github",
-        "repo": "denaes/ti-marketplace-example"
-      },
+      "description": "Unified AI skills library organized by department: engineering, product, marketing, design, sales, operations, and more",
+      "version": "3.3.4",
+      "source": "./",
       "author": {
-        "name": "Thought Industries 101",
+        "name": "Thought Industries",
         "email": "julien.denaes@thoughtindustries.com"
-      },
-      "strict": true
+      }
     }
   ]
 }
